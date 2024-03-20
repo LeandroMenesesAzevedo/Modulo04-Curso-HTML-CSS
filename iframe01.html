@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando Iframe</title>
+    <style>
+        /*As configurações do iframe podem ser realizadas dentro da tag iframe ou no css*/
+
+        /*Sempre que vocês for fazer a configuração o estilo que irá mostrar na tela será o css*/
+
+        /*Por padrão o Iframe tem uma largura de 300px e largura de 150px*/
+        iframe{
+            width: 400px;
+            height: 400px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.473);
+        }
+    </style>
 </head>
 <body>
     <h1> Testando Iframe </h1>
 
     <p> Estou realizando o curso no 
-        <iframe src="https://cursoemvideo.com" frameborder="3"></iframe>
+        <iframe src="https://cursoemvideo.com" frameborder="3" scolling ="no">
+            <a href="https://cursoemvideo.com"> Curso em video </a>
+        </iframe>  
     </p>
 
     <p>
         Alguns sites como: 
-        <iframe src="https://google.com.br" frameborder="1"></iframe>
+        <iframe src="https://google.com.br" frameborder="1">
+        O <a href="https://www.google.com" target="_blank"> Google </a>
+        </iframe>
+        
         possui proteção.
     </p>
 </body>
