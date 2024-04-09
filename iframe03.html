@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do iframe</title>
+
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 95vw;
+            height: 500px;
+            border: 2px solid rgba(0, 0, 0, 0.452);
+        }
+    </style>
+</head>
+<body>
+    <h1> Faça sua escolha </h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque inventore ut quia deleniti perferendis nisi accusamus porro odit nostrum itaque debitis obcaecati ea asperiores, voluptatibus beatae maxime consectetur quaerat.</p>
+
+    <ul>
+        <li><a href="paginasextra/pag001.html" target="frame">Primeira página</a></li>
+        <li> <a href="paginasextra/pag002.html" target="frame">Segunda página</a></li>
+        <li> <a href="paginasextra/pag003.html" target="frame">Terceira página </a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim nostrum nulla maiores dolor laudantium sunt quia dolorem impedit et inventore numquam, atque, veritatis reiciendis molestias unde excepturi provident. Laborum, obcaecati?</p>
+
+    <iframe name="frame" srcdoc= "<h1> Escolha uma opção acima </h1> <p> Ao clicar irá aparecer a página desejada</p> <img src='html5.png'>"> </iframe> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam architecto veritatis, minima libero similique hic dolor officia, corporis ullam, consequatur alias quidem magnam rerum non ea quis suscipit! Est, autem.</p>
+</body>
+</html>
