@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornando iframes mais seguros </title>
+</head>
+<body>
+    <h1> Site Principal </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cum tempora voluptate animi porro, qui consequuntur accusantium, ducimus tempore, laboriosam recusandae iusto? Aliquam doloribus quos eius omnis, ducimus minima. Voluptatum.</p>
+
+    <!-- No iframe ultilizamos o sandbox autorizando coisa da mesma origem, uso de formulário e uso de scripts 
+    referrerpolicy não deixa capturar informação do usuário-->
+    <iframe src="paginasextra/pag004.html" frameborder="2" sandbox="allow-same-origin allow-forms allow-scripts"  referrerpolicy="no-referrer">
+        <p> Seu Navegador não é compativel</p>
+    </iframe>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, aperiam. Excepturi sunt corrupti debitis, quia accusantium eligendi illo saepe, corporis rerum omnis iure, laudantium praesentium minus voluptatem amet? Culpa, expedita.</p>
+</body>
+</html>
