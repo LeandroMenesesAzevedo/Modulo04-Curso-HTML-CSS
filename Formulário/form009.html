@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 </title>
+</head>
+<body>
+    <h1>Elemento output em formulários HTML </h1>
+    <form action="" method="get">
+        <p>
+            <label for="inum">Escolha um valor: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+        </p>
+        <p>
+            <label for="ival"> O valor é: </label>
+            <output name="val" id="ival">  </output>
+        </p>
+
+    </form>
+</body>
+</html>
