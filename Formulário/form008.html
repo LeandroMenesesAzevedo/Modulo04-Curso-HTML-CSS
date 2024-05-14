@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 11 </title>
+</head>
+<body>
+    <h1> Elemento output em formulários HTML </h1>
+
+    <form action="" method="get">
+        <p> 
+            <label for="inum1"> Digite um número: </label>
+            <input type="number" name="num" id="inum1" placeholder="Digite aqui." required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum1.value)"  min="0" max="50">
+        </p>
+
+        <p>
+            <label for="inum2"> Digite o segundo número: </label>
+            <input type="number" name="num2" id="inum2" placeholder="Digite aqui" required oninput="isoma.innerHTML= Number(inum1.value) + Number(inum2.value)" min="0" max="50">
+        </p>
+
+        <p>
+            <label for="isoma">A soma dos valores é :</label>
+            <output name="soma" id="isoma">
+                 0
+            </output>
+        </p>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
