@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* Configuração modo em pé (portrait)*/
+
+
+body{
+    background: url(../imgens/cev-portrait.jpg);
+    background-position: center bottom;
+}
