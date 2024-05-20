@@ -1,3 +1,68 @@
 @charset "UTF-8";
 
 /* Todas as medias */
+
+/* Typical Device Breakpoints
+
+Celular: 320px — 480px //  nesse projeto não entrou esse estilo pois foi feito no style.css pelo mobile first
+
+Tablet: 481px — 768px
+Desktop: 1025px — 1200px
+TV:  1201px, and more.
+*/
+
+@media print{
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /*Desnecessario*/
+    }
+
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    img#celular { display: none;}
+        img#tablet { display: none;}
+        img#impressora { display: block;}
+        img#computador { display: none;}
+        img#tv{ display:none;}
+
+}
+
+@media screen and ( min-width:768px ) and ( max-width: 1025px){
+     body{
+        background-image: url(../imagens/back-tablet.jpg);
+     }
+
+        img#celular { display: none;}
+        img#tablet { display: block;}
+        img#impressora { display: none;}
+        img#computador { display: none;}
+        img#tv{ display:none;}
+}
+
+@media screen and ( min-width:1025px) and (max-width:1200px){
+        body{
+            background-image: url(../imagens/back-pc.jpg);
+        }
+
+        img#celular { display: none;}
+        img#tablet { display: none;}
+        img#impressora { display: none;}
+        img#computador { display: block;}
+        img#tv { display:none;}
+}
+
+@media screen and ( min-width:1201px) {
+        body{
+            background-image: url(../imagens/back-tv.jpg);
+        }
+
+        img#celular { display: none;}
+        img#tablet { display: none;}
+        img#impressora { display: none;}
+        img#computador { display: none;}
+        img#tv { display: block;}
+}
