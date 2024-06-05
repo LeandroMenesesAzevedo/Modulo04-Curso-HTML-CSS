@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Todas as medias */
+
+/* Typical Device Breakpoints
+
+Celular: 320px — 480px //  nesse projeto não entrou esse estilo pois foi feito no style.css pelo mobile first
+
+Tablet: 481px — 768px
+Desktop: 1025px — 1200px
+TV:  1201px, and more.
+*/
+
+
+@media screen and ( min-width: 768px ) {
+
+    span#burguer{
+        display: none;
+    }
+
+    menu#itens{
+        display: block;
+    }
+
+    menu > ul{
+        display: block;
+    }
+    
+    menu > ul > li {
+        display: inline-block;
+        background-color: white;
+        color: rgb(75, 74, 74);
+    }
+
+    main {
+        width: 768px;
+    }
+}
