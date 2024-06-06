@@ -28,8 +28,6 @@ TV:  1201px, and more.
     
     menu > ul > li {
         display: inline-block;
-        background-color: white;
-        color: rgb(75, 74, 74);
     }
 
     main {
